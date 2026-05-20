@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0 0 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section h2 {
+    color: blue;
+}
+
+.fotoperfil {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.habilidades {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.habilidades li {
+    border: 1px solid blue;
+    padding: 5px 10px;
+}
+
+.proyectoscontenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.proyectoscarta {
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+.proyectoscarta h3 {
+    margin-top: 0;
+    color: blue;
+}
+
+.contactoform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proyectoscontenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
